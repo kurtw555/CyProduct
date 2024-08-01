@@ -12,7 +12,7 @@ import org.openscience.cdk.smiles.SmilesGenerator;
 import org.openscience.cdk.smiles.SmilesParser;
 import org.openscience.cdk.tools.manipulator.AtomContainerManipulator;
 
-import biotransformerapicypreact.BioTransformerAPI_cypreact;
+//import biotransformerapicypreact.BioTransformerAPI_cypreact;
 import instances.GenerateInstance;
 import utils.Utilities;
 
@@ -113,9 +113,14 @@ public class PredictionFunctions {
 	 */
 	public boolean isReactant(IAtomContainer oneMole, String cyp) throws Exception{
 		//ReactantPred reactantPredictor = new ReactantPred();
+
+		//KW
+		/*
 		BioTransformerAPI_cypreact cypReactAPI = new BioTransformerAPI_cypreact();
 		boolean isReactant = cypReactAPI.predictReactant(oneMole, cyp);
-		//System.out.println("is Reaction for " + cyp + " : " + isReactant); 
+		*/
+		//System.out.println("is Reaction for " + cyp + " : " + isReactant);
+		boolean isReactant = true;
 		return isReactant;
 	}
 	/**

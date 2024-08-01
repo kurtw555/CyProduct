@@ -26,7 +26,7 @@ import org.openscience.cdk.smiles.SmilesGenerator;
 import org.openscience.cdk.smiles.SmilesParser;
 import org.openscience.cdk.tools.manipulator.AtomContainerManipulator;
 
-import biotransformerapicypreact.BioTransformerAPI_cypreact;
+//import biotransformerapicypreact.BioTransformerAPI_cypreact;
 import instances.CreateTypeOneInstance;
 import instances.CreateTypeTwoThreeInstances;
 import instances.GenerateInstance;
@@ -47,9 +47,13 @@ public class PredictorForAllThreeBoMs {
 	
 	public boolean isReactant(IAtomContainer oneMole, String cyp) throws Exception{
 		//ReactantPred reactantPredictor = new ReactantPred();
+
+		//KW
+		/*
 		BioTransformerAPI_cypreact cypReactAPI = new BioTransformerAPI_cypreact();
 		boolean isReactant = cypReactAPI.predictReactant(oneMole, cyp);
-		//boolean isReactant = true;
+		*/
+		boolean isReactant = true;
 		return isReactant;
 	}
 	/**
