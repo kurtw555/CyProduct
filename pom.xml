@@ -23,31 +23,56 @@
 	  <artifactId>modbcum-e</artifactId>
 	  <version>1.0.10-SNAPSHOT</version>
 	</dependency>
-		<dependency>
-			<groupId>org.openscience.cdk</groupId>
-			<artifactId>cdk-fingerprint</artifactId>
-			<version>${cdk.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.openscience.cdk</groupId>
-			<artifactId>cdk-cip</artifactId>
-			<version>${cdk.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.openscience.cdk</groupId>
-			<artifactId>cdk-qsar</artifactId>
-			<version>${cdk.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.openscience.cdk</groupId>
-			<artifactId>cdk-forcefield</artifactId>
-			<version>${cdk.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.openscience.cdk</groupId>
-			<artifactId>cdk-standard</artifactId>
-			<version>${cdk.version}</version>
-		</dependency>
+	<dependency>
+		<groupId>org.openscience.cdk</groupId>
+		<artifactId>cdk-bundle</artifactId>
+		<version>${cdk.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.openscience.cdk</groupId>
+		<artifactId>cdk-qsarmolecular</artifactId>
+		<version>${cdk.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.openscience.cdk</groupId>
+		<artifactId>cdk-qsarbond</artifactId>
+		<version>${cdk.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.openscience.cdk</groupId>
+		<artifactId>cdk-fingerprint</artifactId>
+		<version>${cdk.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.openscience.cdk</groupId>
+		<artifactId>cdk-cip</artifactId>
+		<version>${cdk.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.openscience.cdk</groupId>
+		<artifactId>cdk-qsar</artifactId>
+		<version>${cdk.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.openscience.cdk</groupId>
+		<artifactId>cdk-qsaratomic</artifactId>
+		<version>${cdk.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.openscience.cdk</groupId>
+		<artifactId>cdk-forcefield</artifactId>
+		<version>${cdk.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.openscience.cdk</groupId>
+		<artifactId>cdk-standard</artifactId>
+		<version>${cdk.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.openscience.cdk</groupId>
+		<artifactId>cdk-builder3d</artifactId>
+		<version>${cdk.version}</version>
+	</dependency>
 
 		<!--
   	<dependency>
@@ -146,6 +171,12 @@
         <groupId>uk.ac.ebi.smsd</groupId>
         <artifactId>smsd-exec</artifactId>
         <version>LATEST</version>
+		<exclusions>
+			<exclusion>
+				<groupId>org.openscience.cdk</groupId>
+				<artifactId>cdk-bundle</artifactId>
+			</exclusion>
+		</exclusions>
     </dependency>
   </dependencies>
     <repositories>
