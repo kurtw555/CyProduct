@@ -73,6 +73,16 @@
 		<artifactId>cdk-builder3d</artifactId>
 		<version>${cdk.version}</version>
 	</dependency>
+	<dependency>
+		<groupId>org.openscience.cdk</groupId>
+		<artifactId>cdk-inchi</artifactId>
+		<version>${cdk.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.openscience.cdk</groupId>
+		<artifactId>cdk-legacy</artifactId>
+		<version>${cdk.version}</version>
+	</dependency>
 
 		<!--
   	<dependency>
@@ -91,17 +101,17 @@
 			<groupId>ambit</groupId>
 			<artifactId>ambit2-some</artifactId>
 			<!--	<version>${project.version}</version> -->
-			<version>1.0</version>
+			<version>4.1.0</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/ambit2-some.jar</systemPath>
+			<systemPath>${project.basedir}/lib/ambit2-some-4.1.0-SNAPSHOT.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>ambit</groupId>
 			<artifactId>ambit2-smarts</artifactId>
 			<!--	<version>${project.version}</version> -->
-			<version>1.0</version>
+			<version>4.1.0-SNAPSHOT</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/ambit2-smarts.jar</systemPath>
+			<systemPath>${project.basedir}/lib/ambit2-smarts-4.1.0-SNAPSHOT.jar</systemPath>
 		</dependency>
 <!--
   	<dependency>

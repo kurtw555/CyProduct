@@ -14,7 +14,7 @@ import org.openscience.cdk.interfaces.IAtomContainerSet;
 import org.openscience.cdk.interfaces.IBond;
 import org.openscience.cdk.interfaces.IRingSet;
 import org.openscience.cdk.ringsearch.AllRingsFinder;
-import org.openscience.cdk.smsd.ring.RingFinder;
+//import org.openscience.cdk.smsd.ring.RingFinder;
 import org.openscience.cdk.tools.manipulator.AtomContainerManipulator;
 
 import utils.MergeFragments;
